@@ -10,21 +10,33 @@
 
 ## 使用方法
 
-中文输出版本：
+### 中文版本
+
+服务端运行：
 
 ```powershell
 python server.py
+```
+
+客户端运行，其中 `192.168.1.10` 替换为服务端内网 IP：
+
+```powershell
 python client.py 192.168.1.10
 ```
 
-英文输出版本：
+### 英文版本
+
+服务端运行：
 
 ```powershell
 python server_EN.py
-python client_EN.py 192.168.1.10
 ```
 
-其中 IP 替换为服务端内网 IP。中文和英文版本使用相同协议，可以互相搭配使用。`server_EN.py` 和 `client_EN.py` 包含完整实现，不依赖中文脚本，可单独复制到其他目录或计算机运行。
+客户端运行，其中 `192.168.1.10` 替换为服务端内网 IP：
+
+```powershell
+python client_EN.py 192.168.1.10
+```
 
 默认下载和上传各持续测试 10 秒。延长至 30 秒可获得更稳定的结果：
 
