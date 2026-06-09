@@ -4,19 +4,27 @@
 
 这是一个仅使用 Python 标准库的服务端/客户端工具，可测试 TCP 延迟、上下行速度和 UDP 丢包率。
 
+## 环境要求
+
+使用前需要安装 **Python 3.8 或更高版本**。可从 [Python 官网](https://www.python.org/downloads/) 下载；安装 Windows 版本时，请勾选 `Add Python to PATH`。
+
 ## 使用方法
 
-服务端运行：
+中文输出版本：
 
 ```powershell
 python server.py
-```
-
-客户端运行，其中 IP 替换为服务端内网 IP：
-
-```powershell
 python client.py 192.168.1.10
 ```
+
+英文输出版本：
+
+```powershell
+python server_EN.py
+python client_EN.py 192.168.1.10
+```
+
+其中 IP 替换为服务端内网 IP。中文和英文版本使用相同协议，可以互相搭配使用。
 
 默认下载和上传各持续测试 10 秒。延长至 30 秒可获得更稳定的结果：
 
