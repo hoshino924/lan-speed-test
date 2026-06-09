@@ -24,7 +24,7 @@ python server.py
 python client.py 192.168.1.10
 ```
 
-Replace the IP address with the server's LAN IP. The Chinese and English versions use the same protocol and can be mixed.
+Replace the IP address with the server's LAN IP. The Chinese and English versions use the same protocol and can be mixed. `server_EN.py` and `client_EN.py` contain the complete implementation, do not depend on the Chinese scripts, and can be copied to another directory or computer by themselves.
 
 By default, download and upload tests each run for 10 seconds. Use a longer duration for more stable results:
 
