@@ -10,21 +10,33 @@ Install **Python 3.8 or later** before using this tool. Download it from the [of
 
 ## Usage
 
-English-output version:
+### English Version
+
+Run the server:
 
 ```powershell
 python server_EN.py
+```
+
+Run the client, replacing `192.168.1.10` with the server's LAN IP address:
+
+```powershell
 python client_EN.py 192.168.1.10
 ```
 
-Chinese-output version:
+### Chinese Version
+
+Run the server:
 
 ```powershell
 python server.py
-python client.py 192.168.1.10
 ```
 
-Replace the IP address with the server's LAN IP. The Chinese and English versions use the same protocol and can be mixed. `server_EN.py` and `client_EN.py` contain the complete implementation, do not depend on the Chinese scripts, and can be copied to another directory or computer by themselves.
+Run the client, replacing `192.168.1.10` with the server's LAN IP address:
+
+```powershell
+python client.py 192.168.1.10
+```
 
 By default, download and upload tests each run for 10 seconds. Use a longer duration for more stable results:
 
